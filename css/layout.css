@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    /* background-color: black; */
+    /* margin: auto; */
+    height: 55rem;
+}
+
+.header{
+    height: 7rem;
+    background-color: var(--colour-header);
+    border-bottom: 1px solid var(--colour-dark-C6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    /* background-color: var(--colour-grey-light-C0); */
+    /* background-color: white; */
+    height: 54rem;
+}
+
+.footer{
+    background-color: white;
+    text-align: center;
+    font-size: large;
+}

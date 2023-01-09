@@ -1,0 +1,33 @@
+:root{
+    --colour-grey-light-C0: rgb(167,169,172);
+    --colour-primary-light-C1: rgb(0,125,190);
+    --colour-primary-C2: rgb(0,88,138);
+    --colour-blue-light-C3: rgb(0,171,189);
+    --colour-blue-light-C4: rgb(84,198,211);
+    --colour-blue-light-C5: rgb(0,183,199);
+    --colour-dark-C6: rgb(35,31,32);
+    --colour-grey-C7: rgb(99,100,102);
+    --colour-header: white;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 75%;
+}
+
+body{
+    font-family: 'Optima', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: var(--colour-grey-light-C0);
+    /* background-image: linear-gradient(to bottom right, var(--colour-primary-light), var(--colour-primary-dark)); */
+    min-height: 100vh;
+}
