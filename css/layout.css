@@ -12,7 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
 
 .content{
     /* background-color: var(--colour-grey-light-C0); */
@@ -24,4 +27,8 @@
     background-color: white;
     text-align: center;
     font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
 }
