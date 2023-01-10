@@ -32,3 +32,43 @@
     align-items: center;
     height: 7rem;
 }
+
+/* LOGIN PAGE */
+
+.header--login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 7rem;
+    background-color: var(--colour-header);
+    /* background-color: yellow; */
+}
+
+.content--login{
+    height: 40rem;
+    /* background-color: black; */
+    padding-top: 5rem;
+    padding-left: 40rem;
+}
+
+
+
+/* REGISTER PAGE */
+
+.header--register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 7rem;
+    background-color: var(--colour-header);
+
+}
+
+.content--register{
+    height: 50rem;
+    /* background-color: black; */
+    padding-top: 5rem;
+    padding-left: 40rem;
+}

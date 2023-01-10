@@ -6,7 +6,7 @@
 
 .nav{
     /* background-color: black; */
-    flex: 0 0 25%;
+    flex: 0 0 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,45 @@
     background-color: var(--colour-grey-light-C0);
     color: white;
 }
+
+
+/*dropdown css for HOST in navbar*/
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d9d9d9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
 
 
 .active{
@@ -240,4 +279,107 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: lightblue;
+}
+
+
+
+
+/* LOGIN PAGE */
+
+.login--title{
+    font-size: large;
+    /* background-color: yellow; */
+    flex: 1;
+    text-align: center;
+}
+
+.login--title h1{
+    text-decoration: underline;
+}
+
+.button__back{
+    flex: 0 0 20%;
+    color: black;
+    /* background-color: black; */
+}
+
+.button__link--home{
+    color: black;
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+
+.form--box{
+    background-color: white;
+    width: 50rem;
+    height: 30rem;
+    padding: 7rem;
+}
+
+.form{
+    font-size: large;
+}
+
+.username--box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__label--username{
+    flex: 0 0 20%;
+}
+
+.form__input--username{
+    font-family: inherit;
+    font-size: medium;
+    color: inherit;
+    width: 50%;
+    margin-left: 5rem;
+    transition: all 0.4s;
+    
+}
+
+.form__input--username:focus{
+    width: 55%;
+    padding: 5px;
+}
+
+.password--box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__label--password{
+    flex: 0 0 20%;
+}
+
+.form__input--password{
+    font-size: medium;
+    color: inherit;
+    width: 50%;
+    margin-left: 5rem;
+    transition: all 0.4s;
+}
+
+.form__input--password:focus{
+    width: 55%;
+    padding: 5px;
+}
+
+/* REGISTER PAGE */
+
+.register--title{
+    font-size: large;
+    /* background-color: yellow; */
+    flex: 1;
+    text-align: center;
+}
+
+.register--title h1{
+    text-decoration: underline;
 }
