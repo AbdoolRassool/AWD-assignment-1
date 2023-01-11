@@ -285,6 +285,9 @@
 
 
 /* LOGIN PAGE */
+.content__image--login{
+    background-image: url(/img/back-image-1.jpg);
+}
 
 .login--title{
     font-size: large;
@@ -303,23 +306,29 @@
 }
 
 .button__link--home{
-    color: black;
+    color: white;
     text-decoration: none;
+    background-color: var(--colour-blue-light-C5);
+    padding: 1rem;
+    border-radius: 10%;
     /* background-color: black; */
 }
 
 
-.form--box{
+.form--box--login{
     background-color: white;
     width: 30%;
     height: 30rem;
-    padding: 7rem;
+    padding: 6rem;
     margin: auto;
+    border-radius: 10%;
+    opacity: 0.85;
 }
 
 
-.form{
+.form--login{
     font-size: large;
+    text-align: center;
 }
 
 .username--box{
@@ -340,7 +349,6 @@
     width: 50%;
     flex: 50%;
     transition: all 0.4s;
-    
 }
 
 
@@ -382,7 +390,7 @@
 }
 
 .form__button--submit{
-    background-color: var(--colour-blue-light-C3);
+    background-color: var(--colour-blue-light-C5);
     border: none;
     border-radius: 10%;
     padding: 1rem;
@@ -390,11 +398,15 @@
 }
 
 .form__button--cancel{
-    background-color: var(--colour-blue-light-C3);
+    background-color: var(--colour-blue-light-C5);
     border: none;
     border-radius: 10%;
     padding: 1rem;
     color: white;
+}
+
+.register--link{
+    text-align: center;
 }
 
 
@@ -404,7 +416,6 @@
 .register--title{
     font-size: large;
     /* background-color: yellow; */
-    flex: 1;
     text-align: center;
 }
 
@@ -412,25 +423,92 @@
     text-decoration: underline;
 }
 
+.content__image--register{
+    background-image: url(/img/back-image-2.jpg);
+}
+
+.form--box--register{
+    background-color: white;
+    width: 30%;
+    height: 40rem;
+    padding: 6rem;
+    margin: auto;
+    border-radius: 10%;
+    opacity: 0.85;
+}
+
+.form--register{
+    font-size: large;
+    text-align: center;
+}
+
+.name--box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__label--name{
+    flex: 50%;
+}
+
+.form__input--name{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: 50%;
+    flex: 50%;
+    transition: all 0.4s;
+}
 
 
+.form__input--name:focus{
+    width: 55%;
+    padding: 5px;
+}
 
+.email--box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__label--email{
+    flex: 50%;
+}
+
+.form__input--email{
+    font-size: medium;
+    color: inherit;
+    width: 50%;
+    flex: 50%;
+    transition: all 0.4s;
+}
+
+.form__input--email:focus{
+    width: 55%;
+    padding: 5px;
+}
 
 
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
-    .username--box, .password--box{
+    /* LOGIN */
+    .username--box, .password--box, .name--box, .email--box{
         flex-direction: column;
     }
 
-    .login--title h1{
+    .login--title h1, .register--title h1{
         text-decoration: none;
     }
 
-    .form--box{
+    .form--box--login, .form--box--register{
         width: 100%;
         padding: 1rem;
         height: auto;
+        border-radius: 0;
     }
 
     .form__button--box{
@@ -440,4 +518,7 @@
     .form__button--cancel{
         margin-top: 1rem;
     }
+
+    /* REGISTER */
+    
 }

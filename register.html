@@ -17,30 +17,40 @@
             <div class="register--title">
                 <h1>Register Form</h1>
             </div>
+            <div class="button__back">
+                <a href="index.html" class="button__link--home"><i class="fa-solid fa-arrow-left-long fa-xl"></i> Back to home</a>
+            </div>
         </header>
         
-        <div class="content--register">
-            <div class="form--box">
-                <form action="">
-                    <label for="">Full Name</label>
-                    <input type="text">
+        <div class="content--register content__image--register">
+            <div class="form--box--register">
+                <form action="" class="form--register">
+                    <div class="name--box">
+                        <label for="name" class="form__label--name">Name</label>
+                        <input type="text" name="name" class="form__input--name">
+                    </div>
                     <br>
-                    <label for="">Email address</label>
-                    <input type="text">
+                    <div class="email--box">
+                        <label for="email" class="form__label--email">Email</label>
+                        <input type="email" name="email" class="form__input--email">
+                    </div>
                     <br>
-                    <label for="">Password</label>
-                    <input type="password">
+                    <div class="username--box">
+                        <label for="username" class="form__label--username">Username</label>
+                        <input type="text" name="username" class="form__input--username">
+                    </div>
                     <br>
-                    <label for="">Field you are interested:</label>
-                    <select id="field" name="field">
-                        <option value="IOT">IOT</option>
-                        <option value="Network">Network</option>
-                        <option value="engineering">engineering</option>
-                        <option value="Water purifiers">water purifiers</option>
-                      </select>
-
-                    <button type="submit"></button>
-                    <button:</button:cancel>
+                    <div class="password--box">
+                        <label for="password" class="form__label--password">Password</label>
+                        <input type="password" name="password" class="form__input--password">
+                    </div>
+                    <br>
+                    <div class="form__button--box">
+                        <button type="submit" name="btnSubmit" class="form__button--submit">Submit</button>
+                        <button class="form__button--cancel">Cancel</button>
+                    </div>
+                    <br>
+                    <a href="register.html" class="register--link">No account? Create an account here</a>
                 </form>
             </div>
         </div>
