@@ -1,7 +1,7 @@
 .logo{
     /* margin-left: 3rem; */
     /* background-color: black; */
-    margin: auto;
+    /* margin: auto; */
     height: 5rem;
 }
 
@@ -265,6 +265,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     /* background-color: black; */
 }
 
@@ -290,7 +291,6 @@
 .login--title{
     font-size: large;
     /* background-color: yellow; */
-    flex: 1;
     text-align: center;
 }
 
@@ -341,7 +341,6 @@
     color: inherit;
     width: 50%;
     flex: 50%;
-    /* margin-left: 5rem; */
     transition: all 0.4s;
     
 }
@@ -358,6 +357,7 @@
     .form--box{
         width: 100%;
     }
+
 }
 
 .form__input--username:focus{
