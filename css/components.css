@@ -343,20 +343,6 @@
     
 }
 
-@media(max-width: 1000px){
-    .username--box, .password--box{
-        flex-direction: column;
-    }
-
-    .login--title h1{
-        text-decoration: none;
-    }
-
-    .form--box{
-        width: 100%;
-    }
-
-}
 
 .form__input--username:focus{
     width: 55%;
@@ -387,6 +373,32 @@
     padding: 5px;
 }
 
+.form__button--box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.form__button--submit{
+    background-color: var(--colour-blue-light-C3);
+    border: none;
+    border-radius: 10%;
+    padding: 1rem;
+    color: white;
+}
+
+.form__button--cancel{
+    background-color: var(--colour-blue-light-C3);
+    border: none;
+    border-radius: 10%;
+    padding: 1rem;
+    color: white;
+}
+
+
+
 /* REGISTER PAGE */
 
 .register--title{
@@ -398,4 +410,34 @@
 
 .register--title h1{
     text-decoration: underline;
+}
+
+
+
+
+
+
+/* RESPONSIVENESS */
+@media(max-width: 1000px){
+    .username--box, .password--box{
+        flex-direction: column;
+    }
+
+    .login--title h1{
+        text-decoration: none;
+    }
+
+    .form--box{
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .form__button--box{
+        flex-direction: column;
+    }
+
+    .form__button--cancel{
+        margin-top: 1rem;
+    }
 }

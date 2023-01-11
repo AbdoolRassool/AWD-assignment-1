@@ -16,11 +16,11 @@
 }
 
 
-
 .content{
     /* background-color: var(--colour-grey-light-C0); */
     /* background-color: white; */
-    height: 54rem;
+    height: 55rem;
+    
 }
 
 .footer{
@@ -33,7 +33,14 @@
     padding: 1rem;
 }
 
+
 /* LOGIN PAGE */
+
+.content--login{
+    height: 55rem;
+    /* background-color: black; */
+    padding-top: 5rem;
+}
 
 .header--login{
     display: flex;
@@ -45,17 +52,7 @@
     /* background-color: yellow; */
 }
 
-@media(max-width: 1000px){
-    .header--login, .footer{
-        flex-direction: column;
-    }
-}
 
-.content--login{
-    height: 40rem;
-    /* background-color: black; */
-    padding-top: 5rem;
-}
 
 
 
@@ -77,3 +74,12 @@
     padding-top: 5rem;
     padding-left: 40rem;
 }
+
+
+/* RESPONSIVENESS */
+@media(max-width: 1000px){
+    .header--login, .footer{
+        flex-direction: column;
+    }
+}
+
