@@ -495,7 +495,7 @@
 
 
 /* KEYNOTES PAGE */
-.speaker--title--box--1{
+.speaker--title--box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,12 +545,20 @@
     font-weight: 600;
 }
 
+.speaker--bio--link{
+    background-color: var(--colour-primary-C2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+}
 
 .title--talk--box{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 3rem;
 }
 
 
@@ -559,6 +567,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2rem;
 }
 
 
@@ -590,6 +599,13 @@
         margin-top: 1rem;
     }
 
-    /* REGISTER */
-    
+    /* KEYNOTE */
+    .speaker--box--1{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .speaker--group--box{
+        flex-direction: column;
+    }
 }
