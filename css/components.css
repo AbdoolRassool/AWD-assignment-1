@@ -286,7 +286,7 @@
 
 /* LOGIN PAGE */
 .content__image--login{
-    background-image: url(/img/back-image-1.jpg);
+    background-image: url(../img/back-image-1.jpg);
 }
 
 .login--title{
