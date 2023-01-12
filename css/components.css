@@ -493,6 +493,77 @@
 }
 
 
+
+/* KEYNOTES PAGE */
+.speaker--title--box--1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: auto;
+    /* background-color: white; */
+}
+
+.speaker--title{
+    font-size: x-large;
+    color: var(--colour-primary-C2);
+    border-top: 1px solid var(--colour-primary-C2);
+    border-bottom: 1px solid var(--colour-primary-C2);
+    padding: 1rem;
+}
+
+.speaker--box--1{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    margin: auto;
+}
+
+.speaker--image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.speaker--details--1{
+    text-align: center;
+    flex: 0 0 40%;
+    /* background-color: black; */
+}
+
+.speaker--name--1{
+    color: var(--colour-primary-C2);
+    font-size: large;
+}
+
+.speaker--description--1{
+    font-size: small;
+    font-weight: 600;
+}
+
+
+.title--talk--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.speaker--group--box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
     /* LOGIN */
