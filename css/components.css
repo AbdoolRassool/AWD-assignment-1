@@ -143,7 +143,8 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--colour-blue-light-C4);
-    height: 7rem;
+    padding: 2rem;
+    /* height: 7rem; */
 }
 
 .title{
@@ -193,12 +194,12 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: white;
-    height: 20rem;
+    /* height: 20rem; */
 }
 
 .image--info{
     flex: 0 0 40%;
-    padding-left: 5rem;
+    padding: 4rem;
 }
 
 .text--info{
@@ -206,16 +207,9 @@
     margin-right: 2rem;
 }
 
-@media(max-width: 800px){
-    .image--info, .text--info{
-        flex: 100%;
-    }
-}
-
 .speakers--box{
     text-align: center;
     background-color: var(--colour-primary-light-C1);
-    height: 25rem;
     max-width: 100%;
     overflow: hidden;
 }
@@ -229,9 +223,9 @@
 .speakers--image--box{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
-    margin: 2rem 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
 .speakers--image{
@@ -575,6 +569,44 @@
 
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
+    /* INDEX */
+    .title--box{
+        padding: 1rem;
+    }
+
+    .image--info{
+        width: 100%;
+    }
+
+    .text--info{
+        padding: 3rem;
+        flex: 1;
+    }
+
+    .speech--info--box{
+        flex-direction: column;
+    }
+
+    .speakers--image--box{
+        flex-direction: column;
+        /* margin: auto; */
+        margin-left: 2.5rem;
+        align-items: flex-start;
+    }
+
+    .speakers--image--1,
+    .speakers--image--2,
+    .speakers--image--3,
+    .speakers--image--4,
+    .speakers--image--5,
+    .speakers--image--6,
+    .speakers--image--7,
+    .speakers--image--8,
+    .speakers--image--9{
+        animation-play-state: paused;
+        padding-top: 2rem;
+    }
+
     /* LOGIN */
     .username--box, .password--box, .name--box, .email--box{
         flex-direction: column;
