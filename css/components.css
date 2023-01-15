@@ -188,6 +188,22 @@
     animation-play-state: paused;
 }
 
+.date--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--colour-primary-light-C1);
+}
+
+.date--box p{
+    color: white;
+    font-size: large;
+    border: 2px solid var(--colour-blue-light-C5);
+    padding: 1rem;
+}
+
 .speech--info--box{
     display: flex;
     justify-content: space-between;
