@@ -4,9 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/385f365f1d.js" crossorigin="anonymous"></script>
+    <title>Keynotes Information</title>
 </head>
 <body>
-    
+    <div class="container">
+        
+        <header class="header">
+
+            <img src="img/logo.png" alt="Company logo" class="logo">
+
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
+                    <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link active">Registration</a></li>
+                    <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
+                    <li class="nav__list--item"><a href="#" class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Accomodation</a>
+                            <a href="#">Sightseeing</a>
+                            <a href="#">Travel</a>
+                        </div>
+                    </li>
+                    
+
+                    <!-- <li class="nav__list--item"><a href="" class="nav__list--item--link">Host</a></li>  -->
+
+
+
+                    <!-- <li class="nav__list--item"><a href="" class="nav__list--item--link">Sponsors</a></li>
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Gallery</a></li>
+                    
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Details</a></li>
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Contact</a></li>
+
+                -->
+
+                </ul>
+            </nav>
+
+            <form action="#" class="searchbar">
+                <input type="text" class="search__input" placeholder="Search here...">
+                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div class="login">
+                <a href="login.html" class="login__button">Login</a>
+            </div>
+
+        </header>
+
+
+        <div class="content">
+            <div class="news--box">
+                <span class="news--text">Latest news: The deadline for paper submission is extended to 30th September 2022 [Hard Deadline].
+                                        Submission of papers for ICACIE 2022 is open, click here to submit your paper.
+                                        The list of accepted papers published. <a class="news--link" href="#">Click here</a> for details.
+                </span>
+            </div>
+
+            <div class="date--box">
+                <p id="date"></p>
+            </div>
+
+            <div class="registration--title--box">
+                <h1 class="registration--title">Registration details</h1>
+            </div>
+
+            <div class="registration--details--box">
+                <div class="registration--details">
+                    <p class="details--text">Every accepted article should be registered by at least one author to appear in the proceedings. 
+                        The acceptance list of articles will be announced on the website and the authors will be intimated regarding the acceptance through e-mail. 
+                        The details about events and dates of registration are given below:</p>
+
+                    <p class="details--text blue--text">Registration includes ALL the following events to be completed by the author's aforementioned deadline.</p>
+                </div>
+
+                <table class="registration__table--details">
+                    <tr>
+                        <td><strong>Registration and Camera-ready submission of the accepted articles</strong></td>
+                        <td>01 NOV 2022</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Author registration with late fees of INR 1600 (Indian authors) or $30 (foreign authors)</strong></td>
+                        <td>02 NOV - 15 NOV 2022</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="registration--title--box">
+                <h1 class="registration--title">Registration fee details</h1>
+            </div>
+
+
+            <div class="author--registration--box"> 
+                <div class="author--registration--text">
+                    <h2 class="blue--text">Author Registration</h2>
+                    <br>
+                    <p>To ensure the publication of a paper in the Proceedings, at least one author has to register by submitting a normal registration fee within the deadline as indicated below.</p>
+                    <p>Note: All bank charges must be borne by the payer.
+                        The normal registration fee covers publication charges and lunch. The over-length charges beyond 10 pages (in LNNS format) will be added to the Normal registration fees to calculate the actual registration fee to be paid by the authors. 
+                        The over-length charge is Rs. 800 (for Indian authors) or $15 (for foreign authors) per extra page for a maximum of four extra pages.
+                    </p>
+
+                </div>
+                <table class="author--registration__table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Indian</th>
+                        <th>Foreigner</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Author - Student</strong></td>
+                        <td>INR 7000</td>
+                        <td>US $250</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Author - Academician</strong></td>
+                        <td>INR 8000</td>
+                        <td>US $300</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Author - Industry-affiliate</strong></td>
+                        <td>INR 10000</td>
+                        <td>US $400</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <footer class="footer">
+            <img src="img/logo.png" alt="Company logo" class="logo">
+            <div class="icon--box">
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
+            </div>
+            <div class="contact--box">
+                contact info
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Copyright &copy 2023. All rights reserved.</p>
+        </div>
+
+    </div>
 </body>
+<script>
+    // Set date
+    var countDownDate = new Date("July 15, 2023 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Today's date and time
+      var now = new Date().getTime();
+        
+      // distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       
+      document.getElementById("date").innerHTML = days + " days left for meeting ";
+        
+      // If the count down is over, write some text 
+      if ((days == 1) || (days == 0)) {
+        clearInterval(x);
+        document.getElementById("date").innerHTML = days + " day left for meeting ";
+      }
+      // If the count down is over, write some text 
+      else if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("date").innerHTML = -days + " days since meeting";
+      }
+    }, 1000);
+</script>
 </html>

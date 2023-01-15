@@ -581,6 +581,83 @@
 }
 
 
+/* REGISTRATION PAGE */
+.registration--title--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.registration--title{
+    color: var(--colour-primary-C2);
+}
+
+.registration--details--box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.registration--details{
+    padding: 1rem;
+    flex: 50%;
+}
+
+.blue--text{
+    color: var(--colour-primary-C2);
+}
+
+.registration__table--details{
+    flex: 50%;
+    border-collapse: collapse;
+}
+
+.registration__table--details, td{
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.author--registration--box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.author--registration--text{
+    flex: 50%;
+    padding: 1rem;
+}
+
+.author--registration__table{
+    flex: 50%;
+    border-collapse: collapse;
+}
+
+.author--registration__table td, .author--registration__table th{
+    border: 1px solid #ddd;
+    padding: 2rem;
+}
+
+.author--registration__table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.author--registration__table tr:hover{
+    background-color: #ddd;
+}
+
+.author--registration__table th{
+    background-color: var(--colour-primary-light-C1);
+    color: white;
+    font-size: small;
+}
+
 
 
 /* RESPONSIVENESS */
@@ -623,6 +700,7 @@
         padding-top: 2rem;
     }
 
+
     /* LOGIN */
     .username--box, .password--box, .name--box, .email--box{
         flex-direction: column;
@@ -647,6 +725,7 @@
         margin-top: 1rem;
     }
 
+
     /* KEYNOTE */
     .speaker--box--1{
         flex-direction: column;
@@ -656,4 +735,12 @@
     .speaker--group--box{
         flex-direction: column;
     }
+
+    /* REGISTRATION */
+    .registration--details--box, .author--registration--box{
+        flex-direction: column;
+    }
+
+
+
 }
