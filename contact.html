@@ -4,9 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/385f365f1d.js" crossorigin="anonymous"></script>
+    <title>Contact page</title>
 </head>
 <body>
-    
+    <div class="container">
+        
+        <header class="header">
+
+            <img src="img/logo.png" alt="Company logo" class="logo">
+
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
+                    <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
+                    <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
+                    <li class="nav__list--item"><a href="#" class="nav__list--item--link active">Contact</a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Accomodation</a>
+                            <a href="#">Sightseeing</a>
+                            <a href="#">Travel</a>
+                        </div>
+                    </li>
+                    
+
+                    <!-- <li class="nav__list--item"><a href="" class="nav__list--item--link">Host</a></li>  -->
+
+
+
+                    <!-- <li class="nav__list--item"><a href="" class="nav__list--item--link">Sponsors</a></li>
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Gallery</a></li>
+                    
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Details</a></li>
+                    <li class="nav__list--item"><a href="" class="nav__list--item--link">Contact</a></li>
+
+                -->
+
+                </ul>
+            </nav>
+
+            <form action="#" class="searchbar">
+                <input type="text" class="search__input" placeholder="Search here...">
+                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div class="login">
+                <a href="login.html" class="login__button">Login</a>
+            </div>
+
+        </header>
+
+        <div class="content">
+            <div class="title--box">
+                <h1 class="title">Welcome to the 8th International Conference on
+                    Advanced Computing and Intelligent Engineering [ICACIE 2022]</h1>
+            </div>
+
+            <div class="news--box">
+                <span class="news--text">Latest news: The deadline for paper submission is extended to 30th September 2022 [Hard Deadline].
+                                        Submission of papers for ICACIE 2022 is open, click here to submit your paper.
+                                        The list of accepted papers published. <a class="news--link" href="#">Click here</a> for details.
+                </span>
+            </div>
+
+            <div class="date--box">
+                <p id="date"></p>
+            </div>
+
+            <div class="contact--box">
+                <div class="contact__image--box">
+                    <img src="img/contact.jpg" alt="Contact image" class="contact__image">
+                </div>
+                <div class="contact--form--box">
+                    <h2 class="contact--form--title">Contact form</h2>
+                    <br>
+                    <br>
+                    <form action="#" class="contact--form">
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" class="contact--form__input">
+                        <br>
+                        <br>
+                        <label for="designation">Designation/Affiliation</label>
+                        <br>
+                        <input type="text" class="contact--form__input">
+                        <br>
+                        <br>
+                        <label for="">Institution/Organization/Company Name</label>
+                        <br>
+                        <input type="text" class="contact--form__input">
+                        <br>
+                        <br>
+                        <label for="">Email</label>
+                        <br>
+                        <input type="email" class="contact--form__input">
+                        <br>
+                        <br>
+                        <label for="">Phone/Mobile (with country code)</label>
+                        <br>
+                        <input type="text" class="contact--form__input">
+                        <br>
+                        <br>
+                        <label for="">Comment or Message</label>
+                        <br>
+                        <textarea name="comment" cols="34" rows="5" class="contact--form__input"></textarea>
+                        <br>
+                        <br>
+                        <button type="submit" class="contact--form--button">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <footer class="footer">
+            <img src="img/logo.png" alt="Company logo" class="logo">
+            <div class="icon--box">
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                <a href="#" class="icon__link"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
+            </div>
+            <div class="ccontact--details--box">
+                contact info
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Copyright &copy 2023. All rights reserved.</p>
+        </div>
+
+    </div>
 </body>
+<script>
+    // Set date
+    var countDownDate = new Date("July 15, 2023 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Today's date and time
+      var now = new Date().getTime();
+        
+      // distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       
+      document.getElementById("date").innerHTML = days + " days left for meeting ";
+        
+      // If the count down is over, write some text 
+      if ((days == 1) || (days == 0)) {
+        clearInterval(x);
+        document.getElementById("date").innerHTML = days + " day left for meeting ";
+      }
+      // If the count down is over, write some text 
+      else if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("date").innerHTML = -days + " days since meeting";
+      }
+    }, 1000);
+</script>
 </html>
