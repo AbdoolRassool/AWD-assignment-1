@@ -19,7 +19,7 @@
             
             <nav class="nav">              
                 <ul class="nav__list">
-                    <li class="nav__list--item"><a href="index.html" class="nav__list--item--link active">Home</a></li>
+                    <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
                     <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
                     <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
                     <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a></li>
@@ -27,7 +27,7 @@
                         <div class="dropdown">
                             <button class="button__dropdown">Host <i class="fa-solid fa-caret-down"></i></button>
                             <div class="dropdown-content">
-                                <a href="accomodation.html" class="nav__list--item--link">Accomodation</a>
+                                <a href="accomodation.html" class="nav__list--item--link active">Accomodation</a>
                                 <a href="#" class="nav__list--item--link">Link 2</a>
                                 <a href="#" class="nav__list--item--link">Link 3</a>
                             </div>
@@ -38,15 +38,15 @@
                 <div id="hamburger--box">
                     <i class="fa-solid fa-bars fa-2x" onclick="menu()" id="hamburger"></i>
                     <ul id="nav__list">
-                        <li class="nav__list--item"><a href="index.html" class="nav__list--item--link active">Home</a></li>
+                        <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
                         <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
                         <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
                         <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a></li>
-                        <li class="nav__list--item">
+                        <li class="nav__list--item active">
                             <div class="dropdown">
                                 <button class="button__dropdown">Host <i class="fa-solid fa-caret-down"></i></button>
                                 <div class="dropdown-content">
-                                    <a href="#" class="nav__list--item--link">Link 1</a>
+                                    <a href="accomodation.html" class="nav__list--item--link active">Accomodation</a>
                                     <a href="#" class="nav__list--item--link">Link 2</a>
                                     <a href="#" class="nav__list--item--link">Link 3</a>
                                 </div>
@@ -68,81 +68,39 @@
         </header>
 
         <div class="content">
-            <div class="title--box">
-                <h1 class="title">Welcome to the 8th International Conference on
-                    Advanced Computing and Intelligent Engineering [ICACIE 2022]</h1>
+            <div class="accomodation--title--box">
+                <h1 class="accomodation--title">Accomodation</h1>
             </div>
 
-            <div class="news--box">
-                <span class="news--text">Latest news: The deadline for paper submission is extended to 30th September 2022 [Hard Deadline].
-                                        Submission of papers for ICACIE 2022 is open, click here to submit your paper.
-                                        The list of accepted papers published. <a class="news--link" href="#">Click here</a> for details.
-                </span>
+            <br>
+            <br>
+
+            <div class="hotel--box">
+                <img src="img/hotel1.jpg" alt="Hotel 1" class="hotel--image">
+                <div class="hotel--info">
+                    <h1 class="hotel--name">LUX* Grand Gaube Resort & Villas</h1>
+                    <br>
+                    <a href="https://www.booking.com/hotel/mu/legends.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaJ0BiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALckKCeBsACAdICJDAwMzM0MjgyLWJmODItNDliOS05ZjlkLTlmMzk2YmM1MTFhNdgCBeACAQ&sid=ce51e1ff2dd495220425f897f5d31cd9&all_sr_blocks=27577404_360757687_2_0_0;checkin=2023-01-20;checkout=2023-01-27;dest_id=7100;dest_type=region;dist=0;group_adults=2;group_children=0;hapos=2;highlighted_blocks=27577404_360757687_2_0_0;hpos=2;matching_block_id=27577404_360757687_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=27577404_360757687_2_0_0__359800;srepoch=1674053777;srpvid=bf326907fce501b4;type=total;ucfs=1&#hotelTmpl" class="hotel--link" target="_blank">Click here to view hotel</a>
+                </div>
             </div>
 
-            <div class="date--box">
-                <p id="date"></p>
+
+            <div class="hotel--box">
+                <img src="img/hotel2.jpg" alt="Hotel 2" class="hotel--image">
+                <div class="hotel--info">
+                    <h1 class="hotel--name">LUX* Grand Baie Resort & Residences</h1>
+                    <br>
+                    <a href="https://www.booking.com/hotel/mu/lux-grand-baie-resort-amp-residences.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaJ0BiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALckKCeBsACAdICJDAwMzM0MjgyLWJmODItNDliOS05ZjlkLTlmMzk2YmM1MTFhNdgCBeACAQ&sid=ce51e1ff2dd495220425f897f5d31cd9&all_sr_blocks=674813705_360757780_2_42_0&checkin=2023-01-20&checkout=2023-01-27&dest_id=7100&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=3&highlighted_blocks=674813705_360757780_2_42_0&hpos=3&matching_block_id=674813705_360757780_2_42_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=674813705_360757780_2_42_0__427210&srepoch=1674053777&srpvid=bf326907fce501b4&type=total&ucfs=1&activeTab=main" class="hotel--link" target="_blank">Click here to view hotel</a>
+                </div>
             </div>
+            
 
-            <div class="speech--info--box">
-                <img src="img/technology.png" alt="Image" class="image--info">
-                <span class="text--info">ICACIE 2022 focuses on both theory and applications in the broad areas of advanced computing and intelligent engineering. 
-                                        ICACIE is a multidisciplinary conference organized with the objective of bringing together academicians, scientists, researchers from industry, research scholars, and students working in all areas of advanced computing and intelligent engineering. 
-                                        The conference will provide the authors and listeners with opportunities for national and international collaboration and networking among universities and institutions from India and abroad for promoting research and developing technologies. 
-                                        The aim of this conference is to promote the translation of basic research into applied investigation and convert applied investigation into the practice. 
-                                        This conference will also create awareness about the importance of basic scientific research in different fields matching the current trends. The conference will provide the flavor of keynote lectures by eminent speakers from different areas & panel discussions by industry people. 
-                                        The scope of the conference includes all areas of Advanced Computing and Intelligent Engineering.
-                </span>
-            </div>
-
-            <div class="speakers--box">
-                <h1 class="speakers--title">Keynote and Invited Speakers</h1>
-                <div class="speakers--image--box">
-                    <div class="speakers--image--1">
-                        <img src="img/speaker1.jpg" alt="Speaker 1" class="speakers--image">
-                        <p class="speakers--image--caption">Hemant Kumar Rath</p>
-                    </div>
-                    
-                    <div class="speakers--image--2">
-                        <img src="img/speaker2.jpg" alt="Speaker 2" class="speakers--image">
-                        <p class="speakers--image--caption">Prasant Mohapatra</p>
-                    </div>
-                    
-                    <div class="speakers--image--3">
-                        <img src="img/speaker3.jpg" alt="Speaker 3" class="speakers--image">
-                        <p class="speakers--image--caption">Rajkumar Buyya</p>
-                    </div>
-
-                    <div class="speakers--image--4">
-                        <img src="img/speaker4.jpg" alt="Speaker 4" class="speakers--image">
-                        <p class="speakers--image--caption">Sudip Misra</p>
-                    </div>
-
-                    <div class="speakers--image--5">
-                        <img src="img/speaker5.jpg" alt="Speaker 5" class="speakers--image">
-                        <p class="speakers--image--caption">Rolf Drechsler</p>
-                    </div>
-
-                    <div class="speakers--image--6">
-                        <img src="img/speaker6.jpg" alt="Speaker 6" class="speakers--image">
-                        <p class="speakers--image--caption">Chandan Malu</p>
-                    </div>
-
-                    <div class="speakers--image--7">
-                        <img src="img/speaker7.jpg" alt="Speaker 7" class="speakers--image">
-                        <p class="speakers--image--caption">Anandarup Mukherjee</p>
-                    </div>
-
-                    <div class="speakers--image--8">
-                        <img src="img/speaker8.jpg" alt="Speaker 8" class="speakers--image">
-                        <p class="speakers--image--caption">Barun Kumar Saha</p>
-                    </div>
-
-                    <div class="speakers--image--9">
-                        <img src="img/speaker9.jpg" alt="Speaker 9" class="speakers--image">
-                        <p class="speakers--image--caption">Priya Ranjan</p>
-                    </div>
-                    
+            <div class="hotel--box">
+                <img src="img/hotel3.jpg" alt="Hotel 3" class="hotel--image">
+                <div class="hotel--info">
+                    <h1 class="hotel--name">Le Meridien Ile Maurice</h1>
+                    <br>
+                    <a href="https://www.booking.com/hotel/mu/le-meridien-ile-maurice.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaJ0BiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALckKCeBsACAdICJDAwMzM0MjgyLWJmODItNDliOS05ZjlkLTlmMzk2YmM1MTFhNdgCBeACAQ&sid=ce51e1ff2dd495220425f897f5d31cd9&all_sr_blocks=9868929_129958826_2_41_0;checkin=2023-01-20;checkout=2023-01-27;dest_id=7100;dest_type=region;dist=0;group_adults=2;group_children=0;hapos=6;highlighted_blocks=9868929_129958826_2_41_0;hpos=6;matching_block_id=9868929_129958826_2_41_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=9868929_129958826_2_41_0__221200;srepoch=1674053777;srpvid=bf326907fce501b4;type=total;ucfs=1&#hotelTmpl" class="hotel--link" target="_blank">Click here to view hotel</a>
                 </div>
             </div>
 

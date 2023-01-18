@@ -40,9 +40,30 @@
     padding: 1rem;
 }
 
-.nav__list--item--link:hover {
+.nav__list--item--link:hover, .dropdown:hover .button__dropdown {
     background-color: var(--colour-grey-light-C0);
     color: white;
+}
+
+.dropdown .button__dropdown{  
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    padding: 1rem;
+    border: none;
+    background-color: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 1rem;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 #hamburger--box{
@@ -717,6 +738,57 @@
 
 
 
+/* ACCOMODATION PAGE */
+.accomodation--title--box{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.accomodation--title{
+    color: var(--colour-primary-C2);
+    font-size: x-large;
+}
+
+.hotel--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.hotel--image{
+    margin-left: 30rem;
+    flex: 10%;
+    height: 20rem;
+    border-radius: 10px 10px;
+}
+
+.hotel--info{
+    padding: 8rem;
+    margin-left: 5rem;
+    flex: 50%;
+    /* background-color: black; */
+}
+
+.hotel--name{
+    font-size: x-large;
+}
+
+.hotel--link{
+    text-decoration: none;
+    background-color: var(--colour-blue-light-C5);
+    padding: 1rem;
+    border-radius: 16px;
+    color: white;
+    transition: all 0.4s;
+    margin-left: 8rem;
+}
+
+.hotel--link:hover{
+    padding: 1.5rem;
+}
+
 
 
 /* RESPONSIVENESS */
@@ -731,12 +803,16 @@
         display: none;
     }
 
+    .dropdown .button__dropdown, .dropdown-content{
+        background-color: lightblue;
+    }
+
     #nav__list{
         /* display: none; */
         background-color: lightblue;
         text-align: center;
         width: 200px;
-        transition: 0.5s;
+        /* transition: 1s; */
         padding: 1rem;
     }
 
