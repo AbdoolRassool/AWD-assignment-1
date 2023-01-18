@@ -80,7 +80,7 @@
 
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
-    .header--login, .footer, .header--register{
+    .header, .header--login, .footer, .header--register{
         flex-direction: column;
     }
 }

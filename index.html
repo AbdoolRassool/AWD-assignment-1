@@ -17,13 +17,23 @@
             <img src="img/logo.png" alt="Company logo" class="logo">
 
             
-            <nav class="nav">
+            <nav class="nav">              
                 <ul class="nav__list">
                     <li class="nav__list--item"><a href="index.html" class="nav__list--item--link active">Home</a></li>
                     <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
                     <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
                     <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a>
                 </ul>
+
+                <div id="hamburger--box">
+                    <i class="fa-solid fa-bars fa-2x" onclick="menu()" id="hamburger"></i>
+                    <ul id="nav__list">
+                        <li class="nav__list--item"><a href="index.html" class="nav__list--item--link active">Home</a></li>
+                        <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
+                        <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
+                        <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a>
+                    </ul>
+                </div>
             </nav>
 
             <form action="#" class="searchbar">
@@ -136,7 +146,24 @@
 
     </div>
 </body>
+
 <script>
+    var navLink = document.getElementById("nav__list");
+
+    function menu(){
+        if(navLink.style.display === "block"){
+            navLink.style.display = "none";
+        }
+        else{
+            navLink.style.display = "block";
+        }
+    }
+
+
+</script>
+
+<script>
+
     // Set date
     var countDownDate = new Date("July 15, 2023 09:00:00").getTime();
     
