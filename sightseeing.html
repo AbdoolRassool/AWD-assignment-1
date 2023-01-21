@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
     <script src="https://kit.fontawesome.com/385f365f1d.js" crossorigin="anonymous"></script>
-    <title>Keynotes Information</title>
+    <title>Sightseeing</title>
 </head>
 <body>
     <div class="container">
@@ -20,15 +20,15 @@
             <nav class="nav">              
                 <ul class="nav__list">
                     <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
-                    <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link active">Registration</a></li>
+                    <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
                     <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
                     <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a></li>
                     <li class="nav__list--item">
                         <div class="dropdown">
-                            <button class="button__dropdown">Host <i class="fa-solid fa-caret-down"></i></button>
+                            <button class="button__dropdown--active">Host <i class="fa-solid fa-caret-down"></i></button>
                             <div class="dropdown-content">
                                 <a href="accomodation.html" class="nav__list--item--link">Accomodation</a>
-                                <a href="sightseeing.html" class="nav__list--item--link">Sightseeing</a>
+                                <a href="sightseeing.html" class="nav__list--item--link active">Sightseeing</a>
                                 <a href="#" class="nav__list--item--link">Link 3</a>
                             </div>
                         </div>
@@ -36,18 +36,18 @@
                 </ul>
 
                 <div id="hamburger--box">
-                    <i class="fa-solid fa-bars fa-2x" onclick="menu()" id="hamburger"></i>
+                    <i class="fa-solid fa-bars fa-2x" onclick="menu()"></i>
                     <ul id="nav__list">
                         <li class="nav__list--item"><a href="index.html" class="nav__list--item--link">Home</a></li>
-                        <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link active">Registration</a></li>
+                        <li class="nav__list--item"><a href="registration.html" class="nav__list--item--link">Registration</a></li>
                         <li class="nav__list--item"><a href="keynotes.html" class="nav__list--item--link">Keynotes</a></li>
                         <li class="nav__list--item"><a href="contact.html" class="nav__list--item--link">Contact</a></li>
                         <li class="nav__list--item">
                             <div class="dropdown">
-                                <button class="button__dropdown">Host <i class="fa-solid fa-caret-down"></i></button>
+                                <button class="button__dropdown--active">Host <i class="fa-solid fa-caret-down"></i></button>
                                 <div class="dropdown-content">
                                     <a href="accomodation.html" class="nav__list--item--link">Accomodation</a>
-                                    <a href="sightseeing.html" class="nav__list--item--link">Sightseeing</a>
+                                    <a href="sightseeing.html" class="nav__list--item--link active">Sightseeing</a>
                                     <a href="#" class="nav__list--item--link">Link 3</a>
                                 </div>
                             </div>
@@ -67,94 +67,57 @@
 
         </header>
 
-
         <div class="content">
-            <div class="news--box">
-                <span class="news--text">Latest news: The deadline for paper submission is extended to 30th September 2022 [Hard Deadline].
-                                        Submission of papers for ICACIE 2022 is open, click here to submit your paper.
-                                        The list of accepted papers published. <a class="news--link" href="#">Click here</a> for details.
-                </span>
+            <div class="sightseeing--title--box">
+                <h1 class="sightseeing--title">Sightseeing in Mauritius</h1>
             </div>
 
-            <div class="date--box">
-                <p id="date"></p>
-            </div>
-
-            <div class="registration--title--box">
-                <h1 class="registration--title">Registration details</h1>
-            </div>
-
-            <div class="registration--details--box">
-                <div class="registration--details">
-                    <p class="details--text">Every accepted article should be registered by at least one author to appear in the proceedings. 
-                        The acceptance list of articles will be announced on the website and the authors will be intimated regarding the acceptance through e-mail. 
-                        The details about events and dates of registration are given below:</p>
-
-                    <p class="details--text blue--text">Registration includes ALL the following events to be completed by the author's aforementioned deadline.</p>
-                </div>
-
-                <table class="registration__table--details">
-                    <tr>
-                        <td><strong>Registration and Camera-ready submission of the accepted articles</strong></td>
-                        <td>01 NOV 2022</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Author registration with late fees of INR 1600 (Indian authors) or $30 (foreign authors)</strong></td>
-                        <td>02 NOV - 15 NOV 2022</td>
-                    </tr>
-                </table>
-            </div>
             <br>
-            <div class="registration--title--box">
-                <h1 class="registration--title">Registration fee details</h1>
-            </div>
+            <br>
 
+            <div class="sightseeing--box">
+                <img src="img/sightseeing1.jpg" alt="sightseeing1" class="sightseeing--image">
 
-            <div class="author--registration--box"> 
-                <div class="author--registration--text">
-                    <h2 class="blue--text">Author Registration</h2>
+                <div class="sightseeing--info">
+                    <h1 class="sightseeing--name">Pamplemousses Botanical Garden</h1>
                     <br>
-                    <p>To ensure the publication of a paper in the Proceedings, at least one author has to register by submitting a normal registration fee within the deadline as indicated below.</p>
-                    <p>Note: All bank charges must be borne by the payer.
-                        The normal registration fee covers publication charges and lunch. The over-length charges beyond 10 pages (in LNNS format) will be added to the Normal registration fees to calculate the actual registration fee to be paid by the authors. 
-                        The over-length charge is Rs. 800 (for Indian authors) or $15 (for foreign authors) per extra page for a maximum of four extra pages.
-                    </p>
-
+                    <p class="sightseeing--location"><i class="fa-solid fa-location-dot"></i> Pamplemousses</p>
+                    <br>
+                    <p class="sightseeing--details">The Pamplemousses Botanical Garden (officially Sir Seewoosagur Ramgoolam Botanical Garden) is one of the most popular Mauritius attractions. Its origins date back to the French colonial period when the Intendant Pierre Poivre first created the botanical garden in 1770 and showcased various endemic and introduced plants.</p>
+                    <br>
+                    <a href="https://www.bonjourmauritius.com/places-to-visit-in-mauritius-pamplemousses-botanical-garden-and-village/" class="sightseeing--link" target="_blank">Click here to view hotel</a>
                 </div>
-                <table class="author--registration__table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Indian</th>
-                        <th>Foreigner</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Author - Student</strong></td>
-                        <td>INR 7000</td>
-                        <td>US $250</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Author - Academician</strong></td>
-                        <td>INR 8000</td>
-                        <td>US $300</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Author - Industry-affiliate</strong></td>
-                        <td>INR 10000</td>
-                        <td>US $400</td>
-                    </tr>
-                </table>
             </div>
 
+            <div class="sightseeing--box">
+                <img src="img/sightseeing2.jpg" alt="sightseeing1" class="sightseeing--image">
 
+                <div class="sightseeing--info">
+                    <h1 class="sightseeing--name">Chamarel Waterfalls</h1>
+                    <br>
+                    <p class="sightseeing--location"><i class="fa-solid fa-location-dot"></i> Riviere Noire District</p>
+                    <br>
+                    <p class="sightseeing--details">Uncover the immaculate beauty of the island as you descend into a secret valley in the south of Mauritius. Follow the unique sights and sounds of the river as you make your way to the base of the Chamarel Falls.</p>
+                    <br>
+                    <a href="https://mauritiusattractions.com/chamarel-waterfall-hiking-trip-p-1378.html" class="sightseeing--link" target="_blank">Click here to view hotel</a>
+                </div>
+            </div>
 
+            <div class="sightseeing--box">
+                <img src="img/sightseeing3.jpg" alt="sightseeing3" class="sightseeing--image">
 
-
-
-
-
+                <div class="sightseeing--info">
+                    <h1 class="sightseeing--name">Port Louis Waterfront</h1>
+                    <br>
+                    <p class="sightseeing--location"><i class="fa-solid fa-location-dot"></i> Port Louis</p>
+                    <br>
+                    <p class="sightseeing--details">An experience in itself, Le Caudan Waterfront offers a unique shopping, leisure and work hub, in the capital, on the water’s edge. Since its opening in 1996, it has shown undeniable know-how and expertise in commercial activities and entertainment. On top of being an undeniable must for shopping, Le Caudan Waterfront is also a business centre, a melting pot for local artists and the favourite meeting place for gastronomes, tourists and locals looking for leisure and entertainment.</p>
+                    <br>
+                    <a href="https://caudan.com/" class="sightseeing--link" target="_blank">Click here to view hotel</a>
+                </div>
+            </div>
 
         </div>
-
 
         <footer class="footer">
             <img src="img/logo.png" alt="Company logo" class="logo">
@@ -165,7 +128,7 @@
                 <a href="#" class="icon__link"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
             </div>
             <div class="contact--details--box">
-                contact info
+                contact details
             </div>
         </footer>
         <div class="copyright">
@@ -174,7 +137,24 @@
 
     </div>
 </body>
+
 <script>
+    var navLink = document.getElementById("nav__list");
+
+    function menu(){
+        if(navLink.style.display === "block"){
+            navLink.style.display = "none";
+        }
+        else{
+            navLink.style.display = "block";
+        }
+    }
+
+
+</script>
+
+<script>
+
     // Set date
     var countDownDate = new Date("July 15, 2023 09:00:00").getTime();
     

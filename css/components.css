@@ -800,6 +800,59 @@
 }
 
 
+/* SIGHTSEEING PAGE */
+.sightseeing--title--box{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sightseeing--title{
+    color: var(--colour-primary-C2);
+    font-size: x-large;
+}
+
+.sightseeing--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    padding: 2rem;
+}
+
+.sightseeing--image{
+    height: 20rem;
+    width: 50rem;
+    border-radius: 10px;;
+}
+
+.sightseeing--info{
+    flex: 50%;
+    padding: 5rem;
+    text-align: center;
+}
+
+.sightseeing--name{
+    font-size: x-large;
+}
+
+.sightseeing--link{
+    text-decoration: none;
+    background-color: var(--colour-blue-light-C5);
+    padding: 1rem;
+    border-radius: 16px;
+    color: white;
+    transition: all 0.4s;
+}
+
+.sightseeing--link:hover{
+    padding: 1.5rem;
+}
+
+.sightseeing--location{
+    font-size: medium;
+}
+
 
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
@@ -962,5 +1015,21 @@
 
     .hotel--link{
         margin: 0;
+    }
+
+
+    /* SIGHTSEEING */
+    .sightseeing--box{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .sightseeing--image{
+        max-width: 100%;
+        /* margin: 0; */
+    }
+
+    .sightseeing--link{
+        /* margin: 0; */
     }
 }
