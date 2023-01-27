@@ -854,6 +854,44 @@
 }
 
 
+/* TRAVEL */
+.travel--image--box{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.travel--image{
+    width: 90%;
+    height: 55rem;
+}
+
+.travel--text--box{
+    padding: 2rem;
+    font-size: medium;
+    margin-left: 10rem;
+}
+
+.travel--title--box{
+    padding: 2rem;
+    font-size: medium;
+    text-align: center;
+    /* margin-left: 10rem; */
+}
+
+.travel--link{
+    text-decoration: none;
+}
+
+.travel--link:hover{
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+
+
 /* RESPONSIVENESS */
 @media(max-width: 1000px){
     /* INDEX */
@@ -1026,10 +1064,22 @@
 
     .sightseeing--image{
         max-width: 100%;
-        /* margin: 0; */
+
     }
 
-    .sightseeing--link{
-        /* margin: 0; */
+    /* TRAVEL */
+    .travel--image--box{
+       flex-direction: column;
     }
+
+    .travel--image{
+        width: 100%;
+        height: auto;
+    }
+
+    .travel--text--box, .travel--text--box ul, .travel--text--box ol{
+        margin: 5px;
+    }
+
+
 }
